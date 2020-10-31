@@ -138,5 +138,5 @@ app.post("/messages",function(req,res){
 //see message by id
 //delete mesage by id
 
-//process.env.PORT
-app.listen(3000);
+const port=process.env.PORT||3000
+app.listen(port);
